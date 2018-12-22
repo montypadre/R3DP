@@ -1,0 +1,43 @@
+.instagram {
+  &-container {
+    overflow: hidden;
+  }
+  &-list-wrap {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  &-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background: rgba(38,78,81,0.9);
+    transition: bottom 0.4s ease-in-out;
+  }
+  &-list {
+    color: #fff;
+    font-size: 20px;
+    a{
+      color: #fff;
+    }
+    i{
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md){
+  .instagram {
+    &-list-wrap {
+      &:hover {
+        .instagram-info {
+          bottom: 0;
+        }
+      }
+    }
+    &-info {
+      bottom: -100px;
+    }
+  }
+}

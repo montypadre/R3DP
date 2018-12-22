@@ -1,0 +1,190 @@
+/*------------------------------ ask-a-quote-form-----------------------*/
+.ask-a-quote-form{
+  background: #E6E6E6;
+  padding: 50px 30px;
+  .form-group{
+    @include make-xs-column(12);
+    @include make-md-column(6);
+    margin-bottom: 30px;
+    input{
+      height: 50px;
+      width: 100%;
+      padding-left: 30px;
+      line-height: 1;
+    }
+    &-textarea{
+      @include make-xs-column(12);
+      textarea{
+        height: 150px;
+        width: 100%;
+        resize: none;
+        padding: 20px 30px;
+      }
+    }
+  }
+  .from-contol,
+  textarea{
+    font: 12px 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #939292
+    &::placeholder{
+      font: 12px 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #939292
+    }
+  }
+  .from-button{
+    @include make-xs-column(12);
+    padding-top: 30px;
+    text-align: right;
+    input{
+      @extend .btn;
+      font: 14px 'Roboto', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding:20px 40px;
+      outline: none;
+      @include button-variant(#fff, #31dda2, #31dda2);
+      &:disabled{
+        opacity: 0.7;
+        background: lighten(#31dda2, 10%);
+        cursor: not-allowed;
+      }
+    }
+  }
+  &-wrapper{
+    margin-top: 60px;
+  }
+}
+
+.form-group .form-control:focus,
+.form-group-textarea textarea:focus,
+.from-button input:focus{
+  box-shadow: 0 0 0 0;
+  border-color: $lightGreen;
+  outline: none;
+}
+
+@media (min-width: $screen-md){
+  .ask-a-quote-form{
+    padding: 70px 100px;
+  }
+}
+
+/*---------- Request Area Css: -----------*/
+.request-section{
+  .req-image{
+    padding-top:50px;
+    text-align: center;
+  }
+  h4{
+    font: 16px $roboto;
+    font-weight: 400;
+    color: $lightblack;
+    margin-bottom: 30px;
+  }
+  p{
+    padding: 5px 0;
+    line-height: 1.6;
+  }
+  @media (min-width: $screen-md) {
+    .req-image{
+      padding-top:130px;
+      text-align: right;
+    }
+
+  }
+}
+ .section-heading03 {
+  h2{
+    text-transform: uppercase;
+    font: 50px $roboto;
+    font-weight: 700;
+  }
+  h3{
+    font: 30px $roboto;
+    font-weight: 500;
+    line-height: 2;
+    color: $lightGray06 ;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: $screen-md){
+  .section-heading03 h2 {
+      font-size: 80px;
+      line-height: 1;
+  }
+}
+.request-form-section{
+  padding:40px 0;
+  @media (min-width: $screen-md){
+    padding:150px 0;
+  }
+  h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: $lightblack;
+    text-transform: uppercase;
+  }
+}
+.request-form{
+  background:$white04;
+}
+
+.button-wrapper{
+  display: block;
+  margin: 20px -15px;
+}
+.button-{
+  &pinkView,
+  &blueDownload{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    &:after,
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: transparentize(#fff, 0.5);
+      transition: width 0.3s ease-in-out;
+      will-change: width;
+    }
+    &:after{
+      z-index: 1;
+    }
+    &:before{
+      z-index: 2;
+      transition-delay: 0.1s;
+    }
+    span{
+      position: relative;
+      z-index: 3;
+    }
+    &:hover{
+      &:after,
+      &:before{
+        width: 100%;
+      }
+    }
+  }
+  &pinkView{
+    background: $blue02;
+    &:hover{
+      color:  darken($blue02, 20%);
+    }
+  }
+  &blueDownload{
+    background: $pink;
+    &:hover{
+      color:  darken($pink, 20%);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.theme-describe-section{
+  h5{
+    font: 16px $roboto;
+    font-weight: 500;
+    color: $lightGray02;
+  }
+  .service-list{
+    padding: 20px 0;
+    list-style-type: none;
+    li{
+      font: 14px $roboto;
+      font-weight: 400;
+      color: $lightGray02;
+      position: relative;
+      padding: 2.5px 0 2.5px 20px;
+      &:after{
+        position: absolute;
+        content: '';
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background: $lightGray02;
+        left: 0;
+        top: 9px;
+      }
+    }
+  }
+}

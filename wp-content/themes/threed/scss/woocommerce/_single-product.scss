@@ -1,0 +1,192 @@
+.single-product #primary {
+  margin-top: 30px;
+}
+.single-product.woocommerce.woocommerce-page{
+  #content{
+    div.product{
+      @extend .row;
+      div.images{
+        @extend .col-md-7;
+      }
+      div.summary{
+        @extend .col-md-5;
+      }
+    }
+    .product_title.entry-title{
+      font: 18px $roboto;
+      color: $lightGray06;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      margin-bottom:20px;
+      padding-bottom: 10px;
+      &:after{
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 0;
+        height: 1px;
+        width: 30px;
+        background: $lightGray06;
+      }
+    }
+    p.price{
+      color: $lightGray06;
+      padding: 10px 0;
+    }
+    .cart{
+      margin: 30px 0;
+      .quantity{
+        .qty{
+          height: 40px;
+          border-radius: 0;
+        }
+      }
+      .single_add_to_cart_button.button{
+        background: $darkpink;
+        border-color: $darkpink;
+        color: #fff;
+        height: 40px;
+        border-radius: 0;
+        &:focus{
+
+        }
+      }
+    }
+    .product_meta{
+      font: 13px $roboto;
+      color: $lightGray06;
+      font-weight: 400;
+      a{
+        color: $lightGreen02;
+      }
+    }
+    .thumbnails{
+      text-align: center;
+      a{
+        width: 70px;
+        float: none;
+        margin: 0;
+        padding: 5px;
+        display: inline-block;
+      }
+    }
+    .related.products{
+      h2{
+        font: 18px $roboto;
+        color: $lightGray06;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        margin-bottom:20px;
+        padding-bottom: 10px;
+        text-align: center;
+        &:after{
+          content:'';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          height: 1px;
+          width: 40px;
+          margin-left: -20px;
+          border-top: 1px solid;
+        }
+      }
+      .products{
+        padding: 30px 0;
+        li{
+          text-align: center;
+          margin: 0;
+          @extend .col-xs-12;
+          @extend .col-sm-6;
+          @extend .col-md-3;
+          h3{
+            font: 16px $roboto;
+            font-weight: 400;
+            color: $lightGray06;
+            text-transform: uppercase;
+          }
+          .price{
+            font: 30px $roboto;
+            font-weight: 500;
+            color: $lightblack;
+          }
+        }
+      }
+    }
+    .woocommerce-tabs{
+      padding: 70px 0;
+      ul.tabs{
+        @extend .row;
+        &:before{
+          content: none;
+        }
+        li{
+          &:before,
+          &:after{
+            content: none;
+          }
+          border: none;
+          background: #fff;
+          padding: 0;
+          border-radius: 0;
+          &.active{
+            a{
+              color: $lightGreen;
+              position: relative;
+              &:after{
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 50%;
+                width:30%;
+                background: $lightGreen;
+                height: 1px;
+                transform: translateX(-50%);
+              }
+            }
+          }
+        }
+        a{
+          font: 14px $roboto;
+          color: $lightGray06;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          padding: 10px 30px;
+        }
+      }
+      .panel{
+        padding: 10px 50px;
+        border-radius: 0;
+        border: 1px solid #ddd;
+        h2{
+          font: 18px $roboto;
+          font-weight: 400;
+          color: $darkGray;
+        }
+      }
+    }
+    #reviews{
+      .comment_container{
+        .meta{
+          text-transform: capitalize;
+        }
+        .star-rating{
+          span{
+            color: $darkGreen;
+          }
+        }
+      }
+    }
+    .comment-reply-title{
+      font: 18px $roboto;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: $darkGray;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+// Product Area Css:
+.item-content{
+  h2{
+    color: $lightGray06;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  h3{
+    color: $lightGray06;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  & .button03{
+    padding-top:10px;
+    @media (min-width: $screen-lg) {
+    padding-top:30px;
+    }
+    a{
+      background: $lightblack02 none repeat scroll 0 0;
+      border-radius: 0;
+      color: $white;
+      display: inline-block;
+      padding: 8px 25px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      letter-spacing: 2px;
+    }
+  }
+  @media (min-width: $screen-xs) {
+    padding:0 40px;
+  }
+  @media (min-width: $screen-md) {
+    padding:0 20px;
+    p{
+      width: 70%;
+      margin: 20px auto 40px;
+    }
+  }
+  @media (min-width: $screen-lg) {
+    padding:15px 30px;
+  }
+}
+.product-item{
+  margin: 15px 0;
+  padding: 0 15px;
+  text-align: center;
+  img{
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}

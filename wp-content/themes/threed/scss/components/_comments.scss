@@ -1,0 +1,144 @@
+$image-width: 60;
+.comments-area {
+  background: #f7f7f7;
+  padding: 50px 20px;
+  @media screen and (min-width: $screen-md) {
+    padding: 70px 10%;
+  }
+  .sidebar & {
+    @media screen and (min-width: $screen-md) {
+      padding: 70px 30px;
+    }
+  }
+  .comments-title {
+    font: 20px $roboto;
+    font-weight: 400;
+    color: $black02;
+  }
+  .comment-body {
+    padding-bottom: 50px;
+  }
+  ul.list-comments > li {
+    margin: 50px 0;
+    border-bottom: 1px solid #ddd;
+    &:last-child {
+      border: none;
+    }
+  }
+  .comment-details {
+    h4 {
+      font: 15px $roboto;
+      font-weight: 500;
+    }
+    @media screen and (min-width: $screen-sm) {
+      .comment-content,
+      h4 {
+        position: relative;
+        float: left;
+        width: 50%;
+      }
+    }
+    .comment-content {
+      & > div {
+        display: inline-block;
+        padding-right: 15px;
+      }
+      a {
+        font: 14px $roboto;
+        font-weight: 400;
+        color: $lightGray09;
+      }
+      i {
+        color: $lightGray09;
+        &.liked {
+          color: $darkpink;
+        }
+      }
+      .reply-container {
+        i {
+          padding-right: 5px;
+        }
+      }
+      @media screen and (min-width: $screen-sm) {
+        text-align: right;
+        & > div {
+          display: inline-block;
+          padding-left: 15px;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    position: relative;
+  }
+  $t: $image-width + 10 + unquote('px');
+  .user-img-holder {
+    width: $t;
+    float: left;
+    position: relative;
+    z-index: 11;
+    padding-right: 10px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .comment-details {
+    float: left;
+    position: relative;
+    z-index: 2;
+    width: calc(100% - #{$t});
+  }
+  .children {
+    padding-left: 5%;
+    @media screen and (min-width: $screen-sm) {
+      padding-left: 10%;
+    }
+  }
+  .comment {
+    position: relative;
+    width: 100%;
+    @media screen and (min-width: $screen-md) {
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+        background: #DCD0D0;
+      }
+      //bottom arrow
+      &.comment-has-child:after {
+        top: 0;
+        left: 30px;
+        height: 100%;
+        width: 1px;
+        background: #DCD0D0;
+      }
+      //hide bottom arrow height of last child
+      .comment:last-of-type {
+        &:after {
+          background: #F7F7F7;
+          height: calc(100% - 31px);
+          width: 10%;
+          left: -10%;
+          top: 31px;
+          z-index: 10;
+        }
+      }
+    }
+  }
+  //left arrow
+  .children .comment:before {
+    width: 10%;
+    height: 1px;
+    background: #DCD0D0;
+    top: 30px;
+    left: calc(-10% + 25px);
+  }
+}
+.like-container {
+  cursor: pointer;
+}

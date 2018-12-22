@@ -1,0 +1,50 @@
+.about_Wrapper{
+  .about-img{
+    margin-bottom: 80px;
+  }
+  p{
+    margin: 15px 0;
+  }
+}
+.investment{
+  &-wrapper{
+    padding: 100px 0;
+  }
+  &-info{
+    color: #fff;
+    text-align: center;
+    font-family: $roboto;
+    text-align: center;
+    h4{
+      font-size: 30px;
+      font-weight: 700;
+    }
+    h5{
+      font-size: 20px;
+      font-weight: 400;
+    }
+  } 
+}
+.form-control.input-investment{
+  height: 57px;
+  background: transparent;
+  border: 1px solid #fff;
+} 
+.button-investment{
+  padding: 20px 25px;
+  background: $lightBlue07;
+  color: #fff;
+  font: 14px $roboto;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid $lightBlue07;
+}
+
+/*---------------- team section --------------------*/
+.teamSection-wrapper{
+  .section-heading{
+    p{
+      margin-top: 50px;
+    }
+  }
+}

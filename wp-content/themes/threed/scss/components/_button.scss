@@ -1,0 +1,248 @@
+.button-simple{
+  @extend .btn;
+  @include button-variant($darkGray, transparent, transparent);
+  @include button-size($padding-base-vertical, 0, 12px, $line-height-base, 0);
+  text-transform: uppercase;
+  font-weight: 500;
+  &--superMargin{
+  	margin-top: 50px;
+  }
+}
+.button-services{
+  @extend .btn;
+  @include button-size(20px, 35px, $font-size-base, $line-height-base, 0);
+  margin: 10px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 0;
+  transition: color  0.3s;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: inset 0 0 0 35px $lightblack02;
+    border-radius: 4px;
+    transform: scale3d(1, 1, 1);
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  &:hover{
+    color: $lightblack02;
+    &:after{
+      box-shadow: inset 0 0 0 2px $lightblack02;
+    }
+  }
+  &--green{
+   color: #fff;
+    &:after{
+      box-shadow: inset 0 0 0 35px $darkGreen;
+    }
+    &:hover{
+      color: $darkGreen;
+      &:after{
+        box-shadow: inset 0 0 0 2px $darkGreen;
+      }
+    }
+  }
+  &--black{
+    color: #fff;
+     &:after{
+       box-shadow: inset 0 0 0 35px #000;
+     }
+     &:hover{
+       color: #000;
+       &:after{
+         box-shadow: inset 0 0 0 2px #000;
+       }
+     }
+  }
+}
+
+.button--green{
+  @extend .btn;
+  display: inline-block;
+  @include button-variant(#fff, $lightGreen02, $lightGreen02);
+  @include button-size(18px, 60px, $font-size-base, $line-height-base, 0);
+  margin-top: 60px;
+  text-transform: uppercase;
+  border: 1px;
+  border-style: solid;
+  transition-property: border , color , background;
+  transition: 0.4s ease-in-out;
+  &--large{
+    width: 400px;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+  }
+  &--small{
+    padding: 10px 30px;
+  }
+  &:hover{
+    @include button-variant($lightGreen02, #fff, $lightGreen02);
+  }
+}
+
+.button-medium{
+  @extend .btn;
+  display: inline-block;
+  padding: 10px 30px;
+  font: 12px $roboto;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &--green{
+    @include button-variant(#fff, $lightGreen02, $lightGreen02);
+  }
+  &--black{
+     @include button-variant(#fff, $lightBlack2, $lightBlack2);
+  }
+  &--red{
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    transition: color  0.3s;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      box-shadow: inset 0 0 0 35px $red1;
+      transform: scale3d(1, 1, 1);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    &:hover,
+    &:focus{
+      color: $red1;
+      &:after{
+        box-shadow: inset 0 0 0 2px $red1;
+      }
+    }
+  }
+}
+.button-product{
+  @extend .btn;
+  color: #fff;
+  margin-top:10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  position: relative;
+  padding: 10px 20px;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-shadow: inset 0 0 0 35px $lightblack02;
+    border-radius: 4px;
+  }
+  @media (min-width: $screen-md) {
+    z-index: 0;
+    transition: color  0.3s;
+    &:after{
+      transition: box-shadow 0.3s;
+    }
+    &:hover{
+      color: $lightblack02;
+      &:after{
+        box-shadow: inset 0 0 0 2px $lightblack02;
+      }
+    }
+  }
+  @media (min-width: $screen-lg) {
+    margin-top:30px;
+  }
+  &--pink{
+    @include button-variant(#fff, #ff7575, #ff7575);
+  }
+}
+.button-newsletterSubmit{
+  @extend .btn;
+  @include button-variant(#fff, #e8516d, #e8516d);
+  @include button-size(11px, 0, $font-size-base, $line-height-base, 0);
+  width: 160px;
+  max-width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  transition-property: color , background ;
+  transition: 0.4s ease-in-out;
+  &:hover{
+    background: transparent;
+    color: #e8516d;
+  }
+}
+.button-stroke{
+  @extend .btn;
+  @include button-variant(#454545, transparent, #a1a1a1);
+  @include button-size(15px, 25px, 15px, $line-height-base, 0);
+  margin-top:10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  @media (min-width: $screen-lg) {
+    margin-top:30px;
+  }
+}
+
+/* ------------ woocommerce button -------------*/
+.woocommerce{
+  a.button.add_to_cart_button,
+  input.button,
+  button.button,
+  .single_add_to_cart_button.button,
+  .button.wc-forward,
+  #respond input#submit,
+  input.button.alt{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font: 14px $roboto;
+    font-weight: 500;
+    border: 1px solid $darkpink;
+    background: none;
+    text-transform: uppercase;
+     background: $darkpink;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition-property: background , color ;
+    transition: 0.4s ease-in-out;
+    &:hover{
+      color: $darkpink;
+      background: #fff;
+    }
+    &:focus{
+      box-shadow: 0 0 0 0;
+      outline: 0;
+    }
+  }
+}
+.scrollToTop{
+  display: none;
+  position: fixed;
+  width: 38px;
+  height: 37px;
+  font-size: 22px;
+  bottom: 42px;
+  right: 60px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: $red1;
+  cursor: pointer;
+}

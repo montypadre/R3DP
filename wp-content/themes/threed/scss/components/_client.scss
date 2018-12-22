@@ -1,0 +1,13 @@
+/*--------------------- Company Logos Area Css: ----------------------*/
+.company-logos{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  .owl-wrapper{
+    @extend .row;
+  }
+  .owl-item{
+    padding: 0 15px;
+    text-align: center;
+  }
+}

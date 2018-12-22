@@ -1,0 +1,87 @@
+/* -------------- cart page -------------------*/
+.woocommerce-cart{
+  .cart-collaterals{
+    padding: 30px 0;
+    h2{
+      font: 40px $roboto;
+      font-weight: 700;
+      color: $darkGray;
+    }
+    .cart_totals{
+      width: 100%;
+      .cart-subtotal,
+      .order-total,
+      .shipping{
+        th,
+        td{
+          padding: 20px 15px;
+          vertical-align: middle;   
+          font: 23px $roboto;
+          font-weight: 500;
+          color: $lightGray06;  
+        }
+        td{
+          text-align: right;
+          font-weight: 700;
+          @media screen and (min-width: $screen-sm){
+            color: #E25C5C; 
+          }
+        }
+      }
+    }
+    .shipping-calculator-button{
+      font: 14px $roboto;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: $lightGreen02;
+    }
+    .shop_table{
+      border: 1px solid #c1c1c1;
+      border-radius: 0;
+      padding: 10px 20px !important;
+    }
+    .shipping-calculator-form{
+      input{
+        height: 40px;
+      }
+      .form-row-wide{
+
+      }
+    }  
+  }
+  .wc-proceed-to-checkout{
+    text-align: right;
+    a.checkout-button{
+      display: inline-block;
+      background: $darkpink;
+      border: 1px solid $darkpink;;
+      font: 16px $roboto;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: 2px;
+      transition-property: color , background;
+      transition: 0.4s ease-in-out;
+      &:hover{
+        color: $darkpink;
+        background: #fff;
+
+      }
+    }
+  } 
+  .cart{
+    input[type='submit']{
+      background: #000;
+      color: #fff;
+      border-color: #000;
+      &:hover{
+        color: #000;
+        background: #fff;
+      }
+    }
+  }
+  table.cart .product-thumbnail {
+    img{
+      width: 70px;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.service-con{
+  padding-top:40px;
+  .service-main-con{
+    padding-top:40px;
+  }
+  @media (min-width: $screen-md) {
+    .serviced-01-info{
+      padding-left: 100px;
+    }
+    h2{
+      margin-top: 0px;
+    }
+    .section-heading02{
+      margin-bottom: 60px;
+    }
+    .service-main-con{
+      padding-top:100px;
+    }
+    .service-image{
+      text-align: right;
+    }
+  }
+}
+
+/* ---------------- Service01 Area Css: --------------------*/
+.product-area .isotope-menu{
+  text-align: right;
+  @media (min-width: $screen-md) {
+    margin-top: 100px;
+  }
+  a.active{
+    background: #3cb878;
+    border:none;
+    box-shadow:none;
+    color: $white;
+  }
+  .btn {
+    margin-bottom: 15px;
+  }
+}
+
+.service-isotope-menu{
+  display: inline-block;
+  margin-left: 15px;
+  a{
+    padding: 15px 40px;
+  }  
+}
+
+.service-version{
+  text-align: center;
+  padding:40px 0;
+  position:relative;
+  margin-bottom: 20px;
+  h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  i{
+    font-size: 50px;
+    color: $white;
+  }
+  &--type1{
+    background: url("../images/green-pattern.jpg") repeat;
+  }
+  &--type2{
+    background: url("../images/blue-pattern.jpg") repeat;
+  }
+  &--type3{
+    background: url("../images/org-pattern.jpg") repeat;
+  }
+  .service-tag{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    h3{
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 30px;
+      margin:0px;
+    }
+  }
+}
+.product-col-3{
+    @media (min-width: $screen-md) {
+    .first{
+      clear: left;
+    }
+  }
+
+}
+
+/* ----------------------------service type 2 --------------------------------*/
+.product-wrapper{
+  margin-bottom: 30px;
+  text-align: center;
+}

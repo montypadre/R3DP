@@ -1,0 +1,49 @@
+/* ----------- Invest Area Css ----------------*/
+
+.invest-form-area{
+  padding:50px 30px;
+  background:$lightBlue06;
+  text-align: center;
+  @media (min-width: $screen-md) {
+    padding:60px;
+  }
+  p{
+    margin: 0;
+  }
+  .input-newsletter{
+    border-color: $white;
+    margin-bottom: 10px;
+    @media screen and (min-width: $screen-md){
+      height: 60px;
+   }
+  }
+  .button-newsletterSubmit{
+    background-color: $lightBlue07;
+    border-color: $lightBlue07;
+    margin-top: 20px;
+    &:hover,
+    &:focus{
+      background: #fff;
+      color: $lightBlue07;
+    }
+    @media screen and (min-width: $screen-md){
+      margin-top: 0;
+      padding: 20px 0;
+    }
+  }
+  h2{
+    font-weight: 700;
+    color: $white;
+    font-size: 30px;
+    margin-top: 0px;
+    @media (min-width: $screen-md) {
+    margin-top: 0px;
+    }
+  }
+  h3{
+    font-weight: 400;
+    color: $white;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}

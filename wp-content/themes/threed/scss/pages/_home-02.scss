@@ -1,0 +1,35 @@
+.demo-02-wrapper{
+  .owl-theme .owl-controls {
+    margin-top: 30px;
+    .owl-pagination {
+      .owl-page.active {
+        span{
+          background: lighten($orange , 30%);
+        }
+      }  
+    }
+   } 
+  .about-content{  
+    a{
+      &:after{
+        background-color: lighten($orange , 30%);
+      }
+    }
+  }  
+  .print-world-info{
+    &:hover{
+      h6{
+        color: $orange;
+      }
+    }
+  }
+}
+
+.section-row-v2{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media screen and (min-width: $screen-md){
+    padding-top: 130px;
+    padding-bottom: 130px
+  }
+}

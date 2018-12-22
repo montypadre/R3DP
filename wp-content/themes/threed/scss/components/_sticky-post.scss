@@ -1,0 +1,26 @@
+.sticky{
+  background: #f7f7f7;
+  padding: 0 30px;
+  border: 0;
+}
+.tag-sticky-2{
+  .blog-content{
+    ul{
+      list-style-type: none;
+      padding: 0;
+      li{
+        padding: 10px 30px;
+        position: relative;
+        &:after{
+          position: absolute;
+          content: '';
+          background: $darkpink;
+          height: 10px;
+          width: 10px;
+          top: 17px;
+          left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.single-team-member{
+  .team-info-member{
+    h4{
+      font: 30px $roboto;
+      color: #565656;
+      font-weight: 400;
+      margin-top: 0;
+    }
+    h6{
+      font: 18px $roboto;
+      color: #898989;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 50px;
+    }
+  }
+  h1.entry-title,
+  .other-member-title{
+    font: 25px $roboto;
+    font-weight: 400;
+    color: $lightGray02;
+    margin-bottom: 30px;
+  }
+  .team-info-area{
+    .content-image-wrapper{
+      @extend .col-md-5;
+    }
+    .team-content{
+      @extend .col-md-7;
+    }
+  }
+  .other-member-wrapper{
+    padding: 70px 0;
+  }
+  .other-member-slider{
+    padding: 20px 0;
+    list-style-type: none;
+    margin-left: -15px;
+    margin-right: -15px;
+    li{
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+      h4{
+        font-weight: 400;
+        color: $lightGray02;
+        font-size: 20px;
+        a{
+          &:hover{
+            text-decoration: none;
+          }
+        }  
+      }
+      .member-info{
+        padding: 20px 0;
+        border-bottom:1px solid $white04;
+      }
+    }
+  }
+}

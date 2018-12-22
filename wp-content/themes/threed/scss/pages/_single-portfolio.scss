@@ -1,0 +1,20 @@
+.single-portfolio{
+  .portfolio-list-single{
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  .portfolio-content{
+    padding: 20px 30px;
+  }
+  .portfolio-other-wrapper{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .other_works_heading,
+  .entry-title{
+    font: 25px $roboto;
+    font-weight: 400;
+    color: $lightGray02;
+    margin-bottom: 40px;
+  }
+}

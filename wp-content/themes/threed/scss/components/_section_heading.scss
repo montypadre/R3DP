@@ -1,0 +1,159 @@
+.section-heading{
+  margin-bottom: 30px;
+  position: relative;
+  @media screen and (min-width: $screen-md){
+    margin-bottom: 60px;
+  }
+  img{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform:uppercase;
+    line-height: 1;
+    @media (min-width: $screen-md) {
+      font-size: 50px;
+    }
+  }
+  h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: $darkGray;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+ &.section-heading-custom{
+  p{
+    margin-top: 50px;
+    @media (min-width: $screen-sm) {
+      width: 40%;
+    }
+  }
+ }
+  &.icon-left{
+    .title_icon{
+      position: absolute;
+      left: 0;  
+    }
+    .title_content{
+      padding-left: 60px;
+    }
+  }
+  &.icon-right{
+    .title_icon{
+      position: absolute;
+      right: 0;
+      top: 27px;
+    }
+    .title_content{
+      padding-right: 60px;
+      display: inline-block;
+      position: relative;
+    }
+  }
+}
+
+.section-heading02{
+  margin-bottom: 40px;
+  // @media (min-width: $screen-md) {
+  //   margin-bottom: 100px;
+  // }
+  h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: $lightblack;
+    text-transform:uppercase;
+    margin: 20px 0;
+    display: inline-block;
+    @media (min-width: $screen-md) {
+      font-size: 80px;
+      line-height: 0.9;
+    }
+  }
+  h3{
+    font-size: 20px;
+    font-weight: 300;
+    color: $lightGray02;
+    margin: 20px 0;
+    text-transform: none;
+    @media (min-width: $screen-md) {
+      font-size: 30px;
+      line-height: 1;
+    }
+  }
+}
+
+.section-heading03{
+  .threed-heading{
+    font: 16px $roboto;
+    font-weight: 700;
+    color: #393939;
+    line-height: 1.6;
+    margin: 30px 0 0;
+  }
+  .threed-subheading{
+    font: 30px $roboto;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+    margin: 5px 0 0;
+    @media screen and (min-width: $screen-md){
+      font-size: 60px;
+    }
+  }
+}
+
+.section-heading04{
+  font-family: $roboto;
+  color: #000;
+   font-weight: 500;
+  .threed-heading{
+    font-size: 55px ;
+    color: #393939;
+    line-height: 1;
+    margin: 30px 0 0;
+  }
+  .threed-subheading{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 5px 0 0;
+    @media screen and (min-width: $screen-md){
+      font-size: 84px;
+    }
+  }
+  .threed-content{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+}
+
+.section-heading05{
+  .threed-heading,
+  .threed-subheading{
+    margin: 0;
+    font: 35px $roboto;
+    line-height: 1;
+    color: #000;
+    font-weight: 700;
+  }
+  .threed-heading{
+    font-weight: 300;
+  }
+  .threed-content{
+    font-size: 15px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    margin: 30px 0 0px;
+  }
+  @media screen and (min-width: $screen-md){
+    .threed-heading,
+    .threed-subheading{
+      font-size: 55px;
+    }
+  }
+}

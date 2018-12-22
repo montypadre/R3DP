@@ -1,0 +1,48 @@
+.woocommerce-page .woocommerce-thankyou-order-details{
+  li{
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: left;
+    margin: 0;
+    &:last-of-type{
+      border: 1px solid #ddd;
+    }
+    padding: 20px;
+    @media screen and (min-width: $screen-xs){
+      width: 50%;
+    }
+    @media screen and (min-width: $screen-md){
+      width: 25%;
+      border: 0;
+      border-right: 1px solid #ddd;
+      &:last-of-type{
+        border: 0;
+         border-right: 1px solid #ddd;
+      }
+    }
+  }
+  .order_details{
+    tfoot{
+      th,
+      td{
+        padding: 20px 15px;
+      }
+    }
+  }
+}
+.woocommerce-order-received{
+  h2{
+    font: 30px $roboto;
+    font-weight: 400;
+    color: $black;
+    margin-bottom: 30px;
+  }
+  header.title h3{
+    padding-left: 0;
+  }
+  .shop_table{
+    a{
+      color: $lightGreen02;
+    }
+  }
+}

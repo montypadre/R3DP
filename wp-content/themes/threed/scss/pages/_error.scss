@@ -1,0 +1,23 @@
+.error404{
+  overflow: hidden;
+}
+.errorPage-wrapper{
+  margin-top: 64vh;
+  text-align: center;
+  h4{
+    font: 20px $roboto;
+    font-weight: 300;
+    color: #e7f5ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    span{
+      color: #9bc6e5;
+      letter-spacing: 2px;
+      display: block;
+    }
+  }
+  a{
+    margin-top: 20px;
+  }
+}

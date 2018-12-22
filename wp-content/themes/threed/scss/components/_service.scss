@@ -1,0 +1,191 @@
+.service{
+	&-home{
+		overflow: hidden;
+		.vc_column_container>.vc_column-inner {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	h4{
+		font: 15px $roboto;
+		font-weight: 400;
+		color: $lightGray04;
+		text-transform: uppercase;
+		@media screen and (min-width: $screen-sm){
+			font-size: 18px;
+		}
+	}
+	h2{
+		font: 30px $roboto;
+		font-weight: 500;
+		color: $lightGray05;
+		text-transform: uppercase;
+		line-height: 1;
+		@media screen and (min-width: $screen-sm){
+			font-size: 50px;
+		}
+	}
+	&-type-1{
+    text-align: center;
+		padding: 100px 15px 50px;
+    @media screen and (min-width: $screen-sm){
+			padding: 100px 20% 50px;
+		}
+		h2{
+			margin-bottom: 70px;
+		}
+		.image-service{
+			margin-bottom: 30px;
+		}
+	}
+	&-type-2{
+		overflow: hidden;
+		.service-image{
+			@extend .col-xs-12;
+			@extend .col-sm-5;
+			padding-left: 0;
+			padding-right: 0;
+			text-align: center;
+			background-size: cover ;
+			background-position: center ;
+			height: 100%;
+			&.image-right{
+				float: right;
+			}
+		}
+		.service-info{
+			@include make-xs-column(12);
+			@include make-sm-column(7);
+			padding: 60px 40px 20px 50px;
+		}
+		h2{
+			color: #fff;
+			@media screen and (min-width: $screen-sm){
+				font-size: 40px;
+			}
+		}
+
+	}
+	&-type-3{
+		padding: 60px 50px 90px;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		background-position: center !important;
+		h4{
+			color: #fff;
+		}
+		h2{
+			color: #fff;
+			font-size: 40px;
+		}
+	}
+	&-type-4{
+		padding-top: 30px;
+		padding-bottom: 30px; 
+		.image-holder{
+			text-align: center;
+		}	
+		.image-holder,
+		.service-info{
+			width: 100%;
+			float: left;
+			text-align: center;
+			h4{
+				font-weight: 300;
+			}
+		}
+		.service-post-title,
+		h2{
+			display: inline-block;
+			font: 30px $roboto;
+			padding: 0 5px;
+		}
+		
+		h2{
+			font-weight: 700;
+		}
+		a{
+			margin-top: 20px;
+			border-radius:20px;
+		}
+	}
+	&-type-5{
+		padding: 130px 0;
+		.image-holder{
+			width: 100%;
+			float: left;
+			text-align: center;
+			img{
+				display: inline-block;
+				border-radius: 5px;
+			}
+			@media screen and (min-width: $screen-sm) {
+				width: 40%;
+				padding-right: 100px;
+				text-align: left;
+			}	
+		}
+		.service-info{
+			width: 100%;
+			float: left;
+			text-align: center;
+			@media screen and (min-width: $screen-sm) {
+				width: 60%;
+				text-align: left;
+			}	
+			h4{
+				font-weight: 300;
+			}
+			h2{
+				@media screen and (max-width: $screen-sm) {
+					text-align: center !important;
+				}	
+			}
+		}
+		.service-post-title,
+		h2{
+			margin: 0;
+			font: 40px $roboto;
+			line-height: 1;
+			@media screen and (min-width: $screen-md){
+				font-size: 80px;
+			}
+		}
+		
+		h2{
+			font-weight: 700;
+		}
+		a{
+			margin-top: 20px;
+			border-radius:20px;
+		}
+	}
+	@media screen and (min-width: 1400px){
+		&-type-2,
+		&-type-3{
+			p{
+				width: 70%;
+			}
+		}
+	}
+	@media (min-width: $screen-sm){
+    &-type-3{
+  		padding-right: 0;
+  		padding-left: 100px;
+		}
+		
+		p{
+			font-size: 13px;
+			color: #fff;
+			margin: 20px 0 40px;
+		}
+	}
+}
+.service-home{
+	.service-wrapper{
+		@include make-xs-column(12);
+		@include make-lg-column(6);
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
